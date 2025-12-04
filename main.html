@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RUTAN MALINO</title>
+
+  <style>
+    /* --- GLOBAL STYLE --- */
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* --- HEADER --- */
+    header {
+      background: #1e3a8a;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      height: 58px;
+      filter: drop-shadow(0 3px 5px rgba(0,0,0,0.25));
+      transition: .3s ease;
+    }
+
+    .logo:hover { transform: scale(1.07); }
+
+    .judul {
+      font-size: 22px;
+      font-weight: 600;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+    }
+
+    /* --- FOTO FIX / NON SLIDER --- */
+    .slider {
+      width: 100%;
+      height: 310px;
+      overflow: hidden;
+      border-radius: 0 0 16px 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .slides {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(.85);
+    }
+
+    /* --- MENU BUTTONS --- */
+    .menu {
+      margin: 40px auto;
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      justify-items: center;
+    }
+
+    .btn {
+      width: 300px;
+      padding: 14px 20px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-size: 17px;
+      font-weight: 500;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: .25s ease;
+    }
+
+    .btn:hover {
+      background: #1e3a8a;
+      color: white;
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    /* Button terakhir berada di tengah */
+    .menu a:last-child {
+      grid-column: span 2;
+      justify-self: center;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      margin-top: auto;
+      background: #1e3a8a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* --- RESPONSIVE UNTUK ANDROID / LAYAR KECIL --- */
+    @media (max-width: 600px) {
+
+      header {
+        padding: 12px 14px;
+      }
+
+      .logo {
+        height: 40px;
+      }
+
+      .judul {
+        font-size: 14px;
+        line-height: 1.3;
+        padding: 0 6px;
+      }
+
+      .slider {
+        height: 180px;
+      }
+
+      .menu {
+        margin: 25px auto;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .btn {
+        width: 90%;
+        font-size: 15px;
+        padding: 12px 14px;
+      }
+
+      .menu a:last-child {
+        grid-column: span 1;
+      }
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Logo_Kementrian_Imigrasi_dan_Pemasyarakatan_%282024%29.png/1200px-Logo_Kementrian_Imigrasi_dan_Pemasyarakatan_%282024%29.png" class="logo">
+    <div class="judul">PORTAL PERSURATAN ADMINISTRASI RUTAN KELAS IIB MALINO</div>
+    <img src="https://silaci.com/assets_v2/4.png" class="logo">
+  </header>
+
+  <!-- FOTO TETAP / NO SLIDER -->
+  <div class="slider">
+    <div class="slides">
+      <img src="https://www.gowaterkini.com/wp-content/uploads/2025/02/IMG-20250214-WA0188.jpg" alt="Banner" />
+    </div>
+  </div>
+
+  <div class="menu">
+    <a href="https://docs.google.com/spreadsheets/d/1Jftp7F13yWMBf7Y5aKj_5HcajmJqH3SPGk95y8FTUT8/edit?usp=sharing" target="_blank" class="btn">SURAT KELUAR</a>
+
+    <a href="https://docs.google.com/spreadsheets/d/1WJev_Mvnw7567MeyYtZynJGRhCkETtvYTKn95Jg3uM8/edit?usp=sharing" target="_blank" class="btn">SURAT MASUK</a>
+
+    <a href="https://drive.google.com/drive/folders/1e2DBs1c71ZQw3OEzGG4ISJ6bwgbYmC6i?usp=drive_link" target="_blank" class="btn">UPLOAD SURAT KELUAR</a>
+
+    <a href="https://drive.google.com/drive/folders/1ghU42NJVSWEcw_8b3OtJ0MT6TitYMJJT?usp=drive_link" target="_blank" class="btn">UPLOAD SURAT MASUK</a>
+
+    <a href="https://drive.google.com/drive/folders/12ke0bw6BiL5jWQ5MSrVpgd1mFyKVPFEI?usp=drive_link" target="_blank" class="btn">FORMAT TATA NASKAH DINAS</a>
+  </div>
+
+  <footer>
+    © 2025 RUTAN KELAS IIB MALINO — Sistem Persuratan
+  </footer>
+</body>
+</html>
